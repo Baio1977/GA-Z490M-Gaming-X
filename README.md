@@ -1,0 +1,1 @@
+# GA-Z490M-Gaming-X
