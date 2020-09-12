@@ -1,23 +1,19 @@
-# OpenCore DELL Inspiron 5584
-
 ### Computer Spec:
 
 | Component        | Brank                              |
 | ---------------- | ---------------------------------- |
-| CPU              | Intel i5 8265U                     |
-| iGPU             | Intel® UHD Graphics 620            |
-| Display          | 1920x1080                          |
-| Audio            | Realtek ALC236                     |
-| Ram              | 8Gb ddr4 2400 Mhz                  |
-| Wifi + Bluetooth | BCM943602BAED                      |
-| NVMe             | Samsung 970 evo plus 512Gb         |
-| SSD              | Kingston A400 512gb                |
-| SmBios           | MacbookPro 15,2                    |
+| CPU              | Intel i5 10600                     |
+| iGPU             | Intel® UHD Graphics 630            |
+| Audio            | Realtek ALC1200                    |
+| Ram              | 8Gb x4 ddr4 3200 Mhz               |
+| Wifi + Bluetooth | BCM94360CS2.                       |
+| NVMe             | Samsung 970 Pro 512Gb              |
+| SmBios           | IMac 20.1.                         |
 | BootLoader       | OpenCore                           |
 
-![infocatalina](./Screenshot/1.jpg)
+![infocatalina](./Screenshot/1.png)
 
-![infobigsur](./Screenshot/2.jpg) ![infobigsur](./Screenshot/3.jpg) 
+![infobigsur](./Screenshot/2.png) ![infobigsur](./Screenshot/3.png) 
 
 ## DPCIManager Screenshot
 
