@@ -11,30 +11,28 @@
 | SmBios           | IMac 20.1.                         |
 | BootLoader       | OpenCore                           |
 
+## USB Map by Hackintool
+
 ![infocatalina](./Screenshot/1.png)
 
-![infobigsur](./Screenshot/2.png) ![infobigsur](./Screenshot/3.png) 
+![infobigsur](./Screenshot/2.png)![infobigsur](./Screenshot/3.png) 
 
 ## DPCIManager Screenshot
 
-![infodp1](./Screenshot/6.png)
-![infodp2](./Screenshot/7.png)
+![infodp1](./Screenshot/4.png)
+![infodp2](./Screenshot/5.png)
 
 ### What works and What doesn't or WIP:
 
-- [x] Intel UHD 620 iGPU eDP Output (with Backlight)
-- [x] Intel UHD 620 iGPU HDMI Output
-- [x] ALC236 Internal Speakers
-- [x] ALC236 Native Combojack headphones
-- [x] ALC236 HDMI Audio Output
+- [x] Intel UHD 630 iGPU eDP Output (with Backlight)
+- [x] Intel UHD 630 iGPU HDMI Output
+- [x] ALC1200 Internal Speakers
+- [x] ALC1200 HDMI Audio Output
 - [x] All USB Ports 
 - [x] SpeedStep / Sleep / Wake
-- [x] I2C Touchpad with gesture
-- [x] Brightness Key
-- [x] Wi-Fi and Bluetooth BCM943602BAED Module
-- [x] Realtek RTL8100 LAN
+- [x] Wi-Fi and Bluetooth BCM94360CS2 Module
+- [x] Intel (11)I219-V LAN
 - [x] USB Cardreader
-- [x] ACPI Battery
 - [x] NVRAM
 - [x] Windows boot from OpenCore
 
