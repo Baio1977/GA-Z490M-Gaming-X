@@ -11,8 +11,8 @@
 | BootLoader       | OpenCore                           |
 
 ## USB Map by Hackintool
-![infocatalina](./Screenshot/1.png)
 ![infobigsur](./Screenshot/2.png) 
+![infocatalina](./Screenshot/1.png)
 
 ## DPCIManager Screenshot
 ![infodp1](./Screenshot/4.png)
