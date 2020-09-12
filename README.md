@@ -44,7 +44,7 @@
 
 ## Info Section SSDT GA Z490M Gaming X
 
-![SSDT Dell Inspiron 5584](./Screenshot/5.png)
+![SSDT](./Screenshot/6.png)
 
 ## Credits
 
