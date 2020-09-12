@@ -1,5 +1,4 @@
 ### Computer Spec:
-
 | Component        | Brank                              |
 | ---------------- | ---------------------------------- |
 | CPU              | Intel i5 10600                     |
@@ -17,12 +16,10 @@
 ![infobigsur](./Screenshot/3.png) 
 
 ## DPCIManager Screenshot
-
 ![infodp1](./Screenshot/4.png)
 ![infodp2](./Screenshot/5.png)
 
 ### What works and What doesn't or WIP:
-
 - [x] Intel UHD 630 iGPU eDP Output (with Backlight)
 - [x] Intel UHD 630 iGPU HDMI Output
 - [x] ALC1200 Internal Speakers
@@ -45,7 +42,7 @@
 
 ![pcisection](./Screenshot/4.png)
 
-## Info Section SSDT Inspiron 5584
+## Info Section SSDT GA Z490M Gaming X
 
 ![SSDT Dell Inspiron 5584](./Screenshot/5.png)
 
