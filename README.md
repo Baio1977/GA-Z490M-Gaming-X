@@ -34,6 +34,7 @@
 ### Special Config:
 
 - Usb port mapping performed
+
 ![infobigsur](./Screenshot/3.png)
 - Disabled unused device
 - Cosmetics DSM in Configplist
