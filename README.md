@@ -19,15 +19,12 @@
 ![infodp2](./Screenshot/5.png)
 
 ### What works and What doesn't or WIP:
-- [x] Intel UHD 630 iGPU eDP Output (with Backlight)
-- [x] Intel UHD 630 iGPU HDMI Output
+- [x] Intel UHD 630 iGPU
 - [x] ALC1200 Internal Speakers
 - [x] ALC1200 HDMI Audio Output
 - [x] All USB Ports 
-- [x] SpeedStep / Sleep / Wake
 - [x] Wi-Fi and Bluetooth BCM94360CS2 Module
 - [x] Intel (11)I219-V LAN
-- [x] USB Cardreader
 - [x] NVRAM
 - [x] Windows boot from OpenCore
 
