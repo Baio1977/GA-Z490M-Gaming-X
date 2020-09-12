@@ -38,10 +38,6 @@
 - Disabled unused device
 - Cosmetics DSM in Configplist
 
-## Info Section Screenshot
-
-![pcisection](./Screenshot/4.png)
-
 ## Info Section SSDT GA Z490M Gaming X
 
 ![SSDT](./Screenshot/6.png)
