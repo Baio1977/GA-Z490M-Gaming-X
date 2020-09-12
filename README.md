@@ -12,8 +12,7 @@
 
 ## USB Map by Hackintool
 ![infocatalina](./Screenshot/1.png)
-![infobigsur](./Screenshot/2.png)
-![infobigsur](./Screenshot/3.png) 
+![infobigsur](./Screenshot/2.png) 
 
 ## DPCIManager Screenshot
 ![infodp1](./Screenshot/4.png)
@@ -35,8 +34,10 @@
 ### Special Config:
 
 - Usb port mapping performed
+![infobigsur](./Screenshot/3.png)
 - Disabled unused device
 - Cosmetics DSM in Configplist
+![PCI](./Screenshot/7.png)
 
 ## Info Section SSDT GA Z490M Gaming X
 
