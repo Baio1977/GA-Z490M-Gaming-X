@@ -19,7 +19,7 @@
 ![infodp1](./Screenshot/4.png)
 ![infodp2](./Screenshot/5.png)
 
-## DPCIManager Screenshot
+## Patch IGPU HDMI\DP Output
 ![infodp2](./Screenshot/8.png)
 
 ### What works and What doesn't or WIP:
