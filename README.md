@@ -2,10 +2,10 @@
 | Component        | Brank                              |
 | ---------------- | ---------------------------------- |
 | CPU              | Intel i5 10600                     |
-| iGPU             | Intel® UHD Graphics 630            |
-| GPU esterna      | Sapphire RX 590 Nitro+             |
+| IGPU             | Intel® UHD Graphics 630            |
+| GPU              | Sapphire RX 590 Nitro+             |
 | Audio            | Realtek ALC1200                    |
-| Ram              | 8Gb x4 ddr4 3200 Mhz               |
+| Ram              | 32 Gb DDR4 3200 Mhz                |
 | Wifi + Bluetooth | BCM94360CS2                        |
 | NVMe             | Samsung 970 Pro 512Gb              |
 | SmBios           | IMac 20.1                          |
