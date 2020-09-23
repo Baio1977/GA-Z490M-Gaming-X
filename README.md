@@ -11,10 +11,6 @@
 | SmBios           | IMac 20.1                          |
 | BootLoader       | OpenCore                           |
 
-## USB Map by Hackintool
-![infobigsur](./Screenshot/2.png) 
-![infocatalina](./Screenshot/1.png)
-
 ## DPCIManager Screenshot
 ![infodp1](./Screenshot/4.png)
 ![infodp2](./Screenshot/5.png)
@@ -32,8 +28,7 @@
 - [x] NVRAM
 - [x] Windows boot from OpenCore
 
-### Special Config:
-
+## USB Map by Hackintool
 - Usb port mapping performed
 
 ![infobigsur](./Screenshot/3.png)
