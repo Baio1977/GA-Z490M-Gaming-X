@@ -6,7 +6,7 @@
 | GPU              | Sapphire RX 590 Nitro+             |
 | Audio            | Realtek ALC1200                    |
 | Ram              | 32 Gb DDR4 3200 Mhz                |
-| Wifi + Bluetooth | BCM94360CS2                        |
+| Wifi + Bluetooth | Fenvi FV - T919                    |
 | NVMe             | Samsung 970 Pro 512Gb              |
 | SmBios           | IMac 20.1                          |
 | BootLoader       | OpenCore                           |
