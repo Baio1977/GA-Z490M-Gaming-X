@@ -14,7 +14,7 @@
 
 ![infodp1](./Screenshot/9.png)
 
-## DPCIManager Screenshot
+## Device Screenshot
 ![infodp1](./Screenshot/4.png)
 ![infodp2](./Screenshot/5.png)
 
