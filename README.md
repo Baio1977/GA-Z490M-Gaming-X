@@ -1,7 +1,8 @@
 ### Computer Spec:
 | Component        | Brank                              |
 | ---------------- | ---------------------------------- |
-| CPU              | Intel i5 10600                     |
+| Scheda Madre     | GA Z490M Gaming X                  | https://www.gigabyte.com/Motherboard/Z490M-GAMING-X-rev-10#kf
+| CPU              | Intel i5 10600                     | 
 | IGPU             | Intel® UHD Graphics 630            |
 | GPU              | Sapphire RX 590 Nitro+             |
 | Audio            | Realtek ALC1200                    |
