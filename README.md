@@ -11,6 +11,8 @@
 | SmBios           | IMac 20.1                          |
 | BootLoader       | OpenCore                           |
 
+![infodp1](./Screenshot/9.png)
+
 ## DPCIManager Screenshot
 ![infodp1](./Screenshot/4.png)
 ![infodp2](./Screenshot/5.png)
