@@ -1,7 +1,10 @@
+![infodp1](./Screenshot/10.png)
+![infodp2](./Screenshot/11.png)
+
 ### Computer Spec:
 | Component        | Brank                              |
 | ---------------- | ---------------------------------- |
-| Scheda Madre     | GA Z490M Gaming X                  | https://www.gigabyte.com/Motherboard/Z490M-GAMING-X-rev-10#kf
+| Scheda Madre     | GA Z490M Gaming X                  | 
 | CPU              | Intel i5 10600                     | 
 | IGPU             | Intel® UHD Graphics 630            |
 | GPU              | Sapphire RX 590 Nitro+             |
