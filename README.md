@@ -42,7 +42,6 @@
 ## Info Section SSDT GA Z490M Gaming X
 
 ![SSDT](./Screenshot/6.png)
-![SSDT](./Screenshot/10.png)
 
 ## Credits
 
