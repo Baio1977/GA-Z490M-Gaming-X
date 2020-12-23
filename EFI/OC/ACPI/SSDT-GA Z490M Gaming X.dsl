@@ -334,20 +334,20 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
                 {
                     If ((Arg2 == Zero))
                     {
-                         Return (Buffer (One)
-                         {
-                               0x03                                             // .
-                         })
-                     }
+                        Return (Buffer (One)
+                        {
+                             0x03                                             // .
+                        })
+                    }
 
-                      Return (Package (0x02)
-                      {
-                            "plugin-type", 
-                             One
-                      })
-                  }
-             }
-        }            
+                    Return (Package (0x02)
+                    {
+                        "plugin-type", 
+                        One
+                    })
+                }
+            }
+        }           
 
         Device (USBX)
         {
