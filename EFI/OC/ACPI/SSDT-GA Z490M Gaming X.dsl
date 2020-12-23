@@ -325,35 +325,29 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
                 }
             }
         }
-
-        If (CondRefOf (PR00))
+        
+        Scope (PR00)
         {
-            If ((ObjectType (PR00) == 0x0C))
+            If (_OSI ("Darwin"))
             {
-                Scope (PR00)
+                Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
                 {
-                    If (_OSI ("Darwin"))
+                    If ((Arg2 == Zero))
                     {
-                        Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
-                        {
-                            If ((Arg2 == Zero))
-                            {
-                                Return (Buffer (One)
-                                {
-                                     0x03                                             // .
-                                })
-                            }
+                         Return (Buffer (One)
+                         {
+                               0x03                                             // .
+                         })
+                     }
 
-                            Return (Package (0x02)
-                            {
-                                "plugin-type", 
-                                One
-                            })
-                        }
-                    }
-                }
-            }
-        }
+                      Return (Package (0x02)
+                      {
+                            "plugin-type", 
+                             One
+                      })
+                  }
+             }
+        }            
 
         Device (USBX)
         {
