@@ -318,7 +318,7 @@
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Patch engine</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -336,7 +336,7 @@
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>SMC emulator</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -352,27 +352,9 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>AirportBrcmFixup.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirportBrcmFixup</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Audio patches</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -388,9 +370,27 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
+				<string>AirportBrcmFixup.kext</string>
+				<key>Comment</key>
+				<string>Patch WI FI</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportBrcmFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
 				<string>BrcmBluetoothInjector.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Patch BT</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -408,7 +408,7 @@
 				<key>BundlePath</key>
 				<string>BrcmFirmwareData.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Patch BT</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -426,7 +426,7 @@
 				<key>BundlePath</key>
 				<string>BrcmPatchRAM3.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Patch BT</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -444,7 +444,7 @@
 				<key>BundlePath</key>
 				<string>IntelMausi.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Intel Ethernet LAN</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -462,7 +462,7 @@
 				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Plugin CPU</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -480,7 +480,7 @@
 				<key>BundlePath</key>
 				<string>SMCSuperIO.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Plugin Chipset</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -498,7 +498,7 @@
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Video patches</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -516,7 +516,7 @@
 				<key>BundlePath</key>
 				<string>USBPorts.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>XHC ports configuration</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -673,7 +673,7 @@
 			<key>AuthRestart</key>
 			<false/>
 			<key>BlacklistAppleUpdate</key>
-			<false/>
+			<true/>
 			<key>BootProtect</key>
 			<string>Bootstrap</string>
 			<key>DmgLoading</key>
@@ -720,12 +720,12 @@
 				<data>Rg==</data>
 				<key>boot-args</key>
 				<string>-v keepsyms=1 debug=0x100 brcmfx-country=#a</string>
-				<key>run-efi-updater</key>
-				<string>No</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data>aXQ6NA==</data>
+				<key>run-efi-updater</key>
+				<string>No</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -792,7 +792,7 @@
 			<key>MLB</key>
 			<string>C02045310GUPHCDFB</string>
 			<key>ProcessorType</key>
-			<integer>0</integer>
+			<integer>4105</integer>
 			<key>ROM</key>
 			<data>h3mJzH/6</data>
 			<key>SpoofVendor</key>
@@ -805,6 +805,21 @@
 			<string>C02DNDZWPN5T</string>
 			<key>SystemUUID</key>
 			<string>D9F3E38C-1632-43BA-B6CA-3E2FC5EEFD9D</string>
+		</dict>
+		<key>PlatformNVRAM</key>
+		<dict>
+			<key>BID</key>
+			<string>Mac-CFF7D910A743CAAF</string>
+			<key>FirmwareFeatures</key>
+			<data>dvWP/QAAAAA=</data>
+			<key>FirmwareFeaturesMask</key>
+			<data>f//f/wAAAAA=</data>
+			<key>MLB</key>
+			<string>C02045310GUPHCDFB</string>
+			<key>ROM</key>
+			<data>h3mJzH/6</data>
+			<key>SystemUUID</key>
+			<string>A0B2C263-1BEC-44EC-BBEA-CBED0ABE9292</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -854,6 +869,7 @@
 		<key>Drivers</key>
 		<array>
 			<string>AudioDxe.efi</string>
+			<string>CrScreenshotDxe.efi</string>
 			<string>HfsPlus.efi</string>
 			<string>OpenCanopy.efi</string>
 			<string>OpenRuntime.efi</string>
@@ -947,8 +963,6 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>DeduplicateBootOrder</key>
-			<true/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
