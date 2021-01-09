@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLppaIlV.aml, Wed Dec 23 14:07:28 2020
+ * Disassembly of iASLB4PjHZ.aml, Sat Jan  9 23:57:26 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x00000528 (1320)
+ *     Length           0x000004AA (1194)
  *     Revision         0x02
- *     Checksum         0x77
+ *     Checksum         0x47
  *     OEM ID           "HACK"
  *     OEM Table ID     "HackLife"
  *     OEM Revision     0x00000000 (0)
@@ -26,7 +26,6 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
     External (_SB_.PCI0.RP09, DeviceObj)
     External (_SB_.PCI0.RP09.PXSX, DeviceObj)
     External (_SB_.PCI0.SBUS, DeviceObj)
-    External (_SB_.PCI0.XHC_._PRW, MethodObj)    // 0 Arguments
     External (_SB_.PR00, ProcessorObj)
     External (GBES, IntObj)
     External (STAS, IntObj)
@@ -325,7 +324,7 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
                 }
             }
         }
-        
+
         Scope (PR00)
         {
             If (_OSI ("Darwin"))
@@ -347,7 +346,7 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
                     })
                 }
             }
-        }           
+        }
 
         Device (USBX)
         {
@@ -384,19 +383,6 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
                 Else
                 {
                     Return (Zero)
-                }
-            }
-        }
-
-        If ((CondRefOf (\_OSI, Local0) && _OSI ("Darwin")))
-        {
-            Device (USBW)
-            {
-                Name (_HID, "PNP0D10" /* XHCI USB Controller with debug */)  // _HID: Hardware ID
-                Name (_UID, "WAKE")  // _UID: Unique ID
-                Method (_PRW, 0, NotSerialized)  // _PRW: Power Resources for Wake
-                {
-                    Return (\_SB.PCI0.XHC._PRW ())
                 }
             }
         }
