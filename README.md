@@ -5,7 +5,7 @@
 | CPU              | Intel i5 10600                     | 
 | IGPU             | Intel® UHD Graphics 630            |
 | GPU              | Sapphire RX 590 Nitro+             |
-| Audio            | Realtek ALC1200                    |
+| Audio            | Realtek ALC1200A                   |
 | Ram              | 32 Gb DDR4 3200 Mhz                |
 | Wifi + Bluetooth | Fenvi FV - T919                    |
 | NVMe             | Samsung 970 Pro 512Gb              |
