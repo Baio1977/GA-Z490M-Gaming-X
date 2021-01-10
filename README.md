@@ -12,7 +12,7 @@
 | SmBios           | IMac 20.1                          |
 | BootLoader       | OpenCore                           |
 
-![infodp1](./Screenshot/9.png)
+![infodp1](./Screenshot/11.png)
 
 ## Device Screenshot
 ![infodp1](./Screenshot/4.png)
@@ -20,6 +20,8 @@
 
 ## Patch IGPU HDMI\DP Output
 ![infodp2](./Screenshot/8.png)
+![infodp2](./Screenshot/9.png)
+![infodp2](./Screenshot/10.png)
 
 ### What works and What doesn't or WIP:
 - [x] Intel UHD 630 iGPU
