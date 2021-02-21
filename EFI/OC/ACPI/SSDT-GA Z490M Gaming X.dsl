@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLqPvH6j.aml, Sat Feb 20 23:31:33 2021
+ * Disassembly of iASLAAiPjT.aml, Mon Feb 22 00:36:45 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000004AA (1194)
+ *     Length           0x0000052D (1325)
  *     Revision         0x02
- *     Checksum         0x47
+ *     Checksum         0xF5
  *     OEM ID           "HACK"
  *     OEM Table ID     "HackLife"
  *     OEM Revision     0x00000000 (0)
@@ -29,6 +29,7 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
     External (_SB_.PR00, ProcessorObj)
     External (GBES, IntObj)
     External (STAS, IntObj)
+    External (XPRW, MethodObj)    // 2 Arguments
 
     Scope (\_SB)
     {
@@ -181,6 +182,30 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
                             Return (Zero)
                         }
                     }
+                }
+
+                Device (PMCR)
+                {
+                    Name (_HID, EisaId ("APP9876"))  // _HID: Hardware ID
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (0x0B)
+                        }
+                        Else
+                        {
+                            Return (Zero)
+                        }
+                    }
+
+                    Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+                    {
+                        Memory32Fixed (ReadWrite,
+                            0xFE000000,         // Address Base
+                            0x00010000,         // Address Length
+                            )
+                    })
                 }
             }
 
@@ -386,6 +411,32 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
                 }
             }
         }
+    }
+
+    Method (GPRW, 2, NotSerialized)
+    {
+        If (_OSI ("Darwin"))
+        {
+            If ((0x6D == Arg0))
+            {
+                Return (Package (0x02)
+                {
+                    0x6D, 
+                    Zero
+                })
+            }
+
+            If ((0x0D == Arg0))
+            {
+                Return (Package (0x02)
+                {
+                    0x0D, 
+                    Zero
+                })
+            }
+        }
+
+        Return (XPRW (Arg0, Arg1))
     }
 }
 
