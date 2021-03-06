@@ -160,7 +160,7 @@
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
 				<key>hda-gfx</key>
-				<string>onboard-1</string>
+				<string>onboard-2</string>
 				<key>model</key>
 				<string>Ellesmere Radeon RX 590</string>
 			</dict>
@@ -171,9 +171,9 @@
 				<key>device_type</key>
 				<string>Audio device</string>
 				<key>hda-gfx</key>
-				<string>onboard-1</string>
+				<string>onboard-2</string>
 				<key>model</key>
-				<string>Ellesmere HDMI Audio Radeon RX 590</string>
+				<string>Ellesmere Radeon RX 590 HDMI Audio</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x12,0x0)</key>
 			<dict>
@@ -307,6 +307,8 @@
 				<string>Internal@0,31,3</string>
 				<key>device_type</key>
 				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>layout-id</key>
 				<data>AQAAAA==</data>
 				<key>model</key>
@@ -341,32 +343,44 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>#AAPL00,override-no-connect</key>
+				<data>AP///////wBMLXycAAAAABkVAQOAMBtgCm+xp1VMniUMUFS/74BxT4EAgUCBgJUAlQ+zAAEBAjqAGHE4LUBYLEUA3QwRAAAeZiFQsFEAGzBAcDYA3QwRAAAeAAAA/QAYSxpRFwAKICAgICAgAAAA/ABTTVQyMkEzMDAKICAgAek=</data>
+				<key>#enable-hdmi20</key>
+				<data>AQAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>BwCbPg==</data>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
-				<key>force-online</key>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>enable-hdmi-dividers-fix</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con0-alldata</key>
-				<data>AQUSAAAEAADHAwAA</data>
+				<key>enable-lspcon-support</key>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con0-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con1-alldata</key>
-				<data>AgISAAAIAADHAwAA</data>
+				<key>framebuffer-con0-has-lspcon</key>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con2-alldata</key>
-				<data>AwQSAAAEAADHAwAA</data>
+				<key>framebuffer-con1-has-lspcon</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-index</key>
+				<data>AwAAAA==</data>
+				<key>framebuffer-con2-busid</key>
+				<data>BgAAAA==</data>
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-con2-index</key>
+				<data>AgAAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-portcount</key>
-				<data>BAAAAA==</data>
+				<data>AgAAAA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
-				<string>Intel UHD Graphics</string>
+				<string>Intel UHD Graphics 630</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -635,7 +649,7 @@
 			<key>AppleCpuPmCfgLock</key>
 			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<false/>
+			<true/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>AppleXcpmForceBoost</key>
@@ -880,21 +894,21 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C020354034NPHCDUE</string>
+			<string>C020073014NPHCDUE</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>7TqfOLag</data>
+			<data>8Bfe7gZr</data>
 			<key>SpoofVendor</key>
-			<true/>
+			<false/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
 			<string>iMac20,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02D90DLPN5T</string>
+			<string>C02C80AVPN5T</string>
 			<key>SystemUUID</key>
-			<string>D6EFDE9E-6EE3-4B1D-942C-340A68F492FA</string>
+			<string>D544AF52-8666-4764-9CE2-BD055CEE066B</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -905,13 +919,13 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>f//f/wAAAAA=</data>
 			<key>MLB</key>
-			<string>C020354034NPHCDUE</string>
+			<string>C020073014NPHCDUE</string>
 			<key>ROM</key>
-			<data>7TqfOLag</data>
+			<data>8Bfe7gZr</data>
 			<key>SystemSerialNumber</key>
-			<string>C02D90DLPN5T</string>
+			<string>C02C80AVPN5T</string>
 			<key>SystemUUID</key>
-			<string>D6EFDE9E-6EE3-4B1D-942C-340A68F492FA</string>
+			<string>D544AF52-8666-4764-9CE2-BD055CEE066B</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -968,8 +982,8 @@
 		<array>
 			<string>AudioDxe.efi</string>
 			<string>CrScreenshotDxe.efi</string>
+			<string>HfsPlus.efi</string>
 			<string>OpenCanopy.efi</string>
-			<string>OpenHfsPlus.efi</string>
 			<string>OpenRuntime.efi</string>
 		</array>
 		<key>Input</key>
