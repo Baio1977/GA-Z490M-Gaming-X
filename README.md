@@ -14,7 +14,7 @@
 | Audio            | Realtek ALC1200A                   |
 | Ram              | 32 Gb DDR4 3200 Mhz                |
 | Wifi + Bluetooth | Fenvi FV - T919                    |
-| NVMe             | Samsung 970 Pro 512Gb              |
+| NVMe             | Samsung 980 Pro 512Gb              |
 | SmBios           | IMac 20.1                          |
 | BootLoader       | OpenCore                           |
 
