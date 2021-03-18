@@ -25,6 +25,7 @@
 ![infodp2](./Screenshot/5.png)
 
 ## Patch IGPU HDMI\DP Output
+![infodp2](./Screenshot/12.jpg)
 ![infodp2](./Screenshot/8.png)
 ![infodp2](./Screenshot/9.png)
 ![infodp2](./Screenshot/10.png)
