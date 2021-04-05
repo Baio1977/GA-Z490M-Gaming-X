@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASL2t37xV.aml, Sat Mar  6 06:40:30 2021
+ * Disassembly of iASLevG3h0.aml, Mon Apr  5 22:47:56 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x0000052D (1325)
+ *     Length           0x0000056D (1389)
  *     Revision         0x02
- *     Checksum         0xF5
+ *     Checksum         0x62
  *     OEM ID           "HACK"
  *     OEM Table ID     "HackLife"
  *     OEM Revision     0x00000000 (0)
@@ -21,6 +21,7 @@
 DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
 {
     External (_SB_.PCI0, DeviceObj)
+    External (_SB_.PCI0.CNVW, DeviceObj)
     External (_SB_.PCI0.GLAN, DeviceObj)
     External (_SB_.PCI0.LPCB, DeviceObj)
     External (_SB_.PCI0.RP09, DeviceObj)
@@ -43,6 +44,21 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
 
         Scope (PCI0)
         {
+            Scope (CNVW)
+            {
+                Method (_STA, 0, NotSerialized)  // _STA: Status
+                {
+                    If (_OSI ("Darwin"))
+                    {
+                        Return (Zero)
+                    }
+                    Else
+                    {
+                        Return (0x0F)
+                    }
+                }
+            }
+
             If ((GBES != Zero))
             {
                 Scope (GLAN)
@@ -148,6 +164,11 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
                 Device (EC)
                 {
                     Name (_HID, "ACID0001")  // _HID: Hardware ID
+                    Name (_PRW, Package (0x02)  // _PRW: Power Resources for Wake
+                    {
+                        0x18, 
+                        0x03
+                    })
                     Method (_STA, 0, NotSerialized)  // _STA: Status
                     {
                         If (_OSI ("Darwin"))
