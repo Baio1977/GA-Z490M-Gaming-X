@@ -20,6 +20,28 @@
 
 ![infodp1](./Screenshot/11.png)
 
+## Bios Settings
+
+# Disable:
+
+Fast Boot
+VT-d (can be enabled if you set DisableIoMapper to YES)
+CSM
+Thunderbolt(For initial install, as Thunderbolt can cause issues if not setup correctly)
+Intel SGX
+Intel Platform Trust
+CFG Lock (MSR 0xE2 write protection)
+
+# Enable:
+
+VT-x
+Above 4G decoding
+Hyper-Threading
+Execute Disable Bit
+EHCI/XHCI Hand-off
+OS type: (Windows 10 Feautres: Ohter)
+DVMT Pre-Allocated(iGPU Memory): 128 MB
+
 ## Device Screenshot
 ![infodp1](./Screenshot/4.png)
 ![infodp2](./Screenshot/5.png)
