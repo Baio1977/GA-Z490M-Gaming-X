@@ -34,13 +34,13 @@
 
 # Enable:
 
-VT-x
-Above 4G decoding
-Hyper-Threading
-Execute Disable Bit
-EHCI/XHCI Hand-off
-OS type: (Windows 10 Feautres: Ohter)
-DVMT Pre-Allocated(iGPU Memory): 128 MB
+- VT-x
+- Above 4G decoding
+- Hyper-Threading
+- Execute Disable Bit
+- EHCI/XHCI Hand-off
+- OS type: (Windows 10 Feautres: Ohter)
+- DVMT Pre-Allocated(iGPU Memory): 128 MB
 
 ## Device Screenshot
 ![infodp1](./Screenshot/4.png)
