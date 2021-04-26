@@ -4,7 +4,8 @@
 [![](https://img.shields.io/badge/Facebook-HackintoshLifeIT-informational?style=flat&logo=facebook&logoColor=white&color=3a4dc9)](https://www.facebook.com/hackintoshlife/)
 [![](https://img.shields.io/badge/Instagram-HackintoshLifeIT-informational?style=flat&logo=instagram&logoColor=white&color=8a178a)](https://www.instagram.com/hackintoshlife.it_official/)
 
-### Computer Spec:
+## Computer Spec:
+
 | Component        | Brank                              |
 | ---------------- | ---------------------------------- |
 | Scheda Madre     | GA Z490M Gaming X (BIOS F20d)      | 
@@ -20,9 +21,9 @@
 
 ![infodp1](./Screenshot/11.png)
 
-## Bios Settings
+# Bios Settings
 
-# Disable:
+## Disable:
 
 - Fast Boot
 - VT-d (can be enabled if you set DisableIoMapper to YES)
@@ -32,7 +33,7 @@
 - Intel Platform Trust
 - CFG Lock (MSR 0xE2 write protection)
 
-# Enable:
+## Enable:
 
 - VT-x
 - Above 4G decoding
