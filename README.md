@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/Facebook-HackintoshLifeIT-informational?style=flat&logo=facebook&logoColor=white&color=3a4dc9)](https://www.facebook.com/hackintoshlife/)
 [![](https://img.shields.io/badge/Instagram-HackintoshLifeIT-informational?style=flat&logo=instagram&logoColor=white&color=8a178a)](https://www.instagram.com/hackintoshlife.it_official/)
 
-## Computer Spec:
+# Computer Spec:
 
 | Component        | Brank                              |
 | ---------------- | ---------------------------------- |
@@ -43,17 +43,17 @@
 - OS type: (Windows 10 Feautres: Ohter)
 - DVMT Pre-Allocated(iGPU Memory): 128 MB
 
-## Device Screenshot
+# Device Screenshot
 ![infodp1](./Screenshot/4.png)
 ![infodp2](./Screenshot/5.png)
 
-## Patch IGPU HDMI\DP Output
+# Patch IGPU HDMI\DP Output
 ![infodp2](./Screenshot/12.jpg)
 ![infodp2](./Screenshot/8.png)
 ![infodp2](./Screenshot/9.png)
 ![infodp2](./Screenshot/10.png)
 
-### What works and What doesn't or WIP:
+# What works and What doesn't or WIP:
 - [x] Intel UHD 630 iGPU
 - [x] ALC1200 Internal Speakers
 - [x] ALC1200 HDMI Audio Output
@@ -63,7 +63,7 @@
 - [x] NVRAM
 - [x] Windows boot from OpenCore
 
-## USB Map by Hackintool
+# USB Map by Hackintool
 - Usb port mapping performed
 
 ![infobigsur](./Screenshot/3.png)
@@ -71,7 +71,7 @@
 - Cosmetics DSM in Configplist
 ![PCI](./Screenshot/7.png)
 
-## Info Section SSDT GA Z490M Gaming X
+# Info Section SSDT GA Z490M Gaming X
 
 ![SSDT](./Screenshot/6.png)
 
