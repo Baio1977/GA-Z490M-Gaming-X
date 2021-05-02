@@ -42,7 +42,8 @@
 - EHCI/XHCI Hand-off
 - OS type: (Windows 10 Feautres: Ohter)
 - DVMT Pre-Allocated(iGPU Memory): 128 MB
-
+- DVMT Total Gfx Mem → MAX
+  
 # Device Screenshot
 ![infodp1](./Screenshot/4.png)
 ![infodp2](./Screenshot/5.png)
