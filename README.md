@@ -21,7 +21,7 @@
 
 ![infodp1](./Screenshot/11.png)
 
-# Bios Settings
+# Bios F20 Settings
 
 ## Disable:
 
