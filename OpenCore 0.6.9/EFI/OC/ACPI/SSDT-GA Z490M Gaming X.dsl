@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLevG3h0.aml, Mon Apr  5 22:47:56 2021
+ * Disassembly of iASLhg3RFK.aml, Tue May  4 00:21:16 2021
  *
  * Original Table Header:
  *     Signature        "SSDT"
  *     Length           0x0000056D (1389)
  *     Revision         0x02
- *     Checksum         0x62
+ *     Checksum         0x0B
  *     OEM ID           "HACK"
  *     OEM Table ID     "HackLife"
  *     OEM Revision     0x00000000 (0)
@@ -166,7 +166,7 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
                     Name (_HID, "ACID0001")  // _HID: Hardware ID
                     Name (_PRW, Package (0x02)  // _PRW: Power Resources for Wake
                     {
-                        0x18, 
+                        0x6F, 
                         0x03
                     })
                     Method (_STA, 0, NotSerialized)  // _STA: Status
