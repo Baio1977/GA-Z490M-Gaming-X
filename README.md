@@ -54,6 +54,69 @@
 ![infodp2](./Screenshot/9.png)
 ![infodp2](./Screenshot/10.png)
 
+These are the device properties in the ```config_iMac20,1_iGPU_with_display output.plist``` to configure the iGPU as display output:
+```
+<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+<dict>
+    <key>AAPL,GfxYTile</key>
+    <data>AQAAAA==</data>
+    <key>AAPL,ig-platform-id</key>
+    <data>BwCbPg==</data>
+    <key>AAPL,slot-name</key>
+    <string>Internal@0,2,0</string>
+    <key>device-id</key>
+    <data>mz4AAA==</data>
+    <key>device_type</key>
+    <string>VGA compatible controller</string>
+    <key>enable-hdmi-dividers-fix</key>
+    <data>AQAAAA==</data>
+    <key>framebuffer-con0-busid</key>
+    <data>AQAAAA==</data>
+    <key>framebuffer-con0-enable</key>
+    <data>AQAAAA==</data>
+    <key>framebuffer-con0-type</key>
+    <data>AAgAAA==</data>
+    <key>framebuffer-con1-enable</key>
+    <data>AQAAAA==</data>
+    <key>framebuffer-con1-index</key>
+    <data>AwAAAA==</data>
+    <key>framebuffer-con1-type</key>
+    <data>AAgAAA==</data>
+    <key>framebuffer-con2-busid</key>
+    <data>AAAAAA==</data>
+    <key>framebuffer-con2-enable</key>
+    <data>AQAAAA==</data>
+    <key>framebuffer-con2-flags</key>
+    <data>IAAAAA==</data>
+    <key>framebuffer-con2-index</key>
+    <data>/////w==</data>
+    <key>framebuffer-con2-pipe</key>
+    <data>AAAAAA==</data>
+    <key>framebuffer-con2-type</key>
+    <data>AQAAAA==</data>
+    <key>framebuffer-patch-enable</key>
+    <data>AQAAAA==</data>
+    <key>hda-gfx</key>
+    <string>onboard-1</string>
+    <key>model</key>
+    <string>Intel CoffeeLake-H GT2 [UHD Graphics 630]</string>
+</dict>
+```
+
+And these are the device properties used in the ```config_iMac20,1_iGPU_computing_only.plist``` to setup the iGPU as computing only:
+```
+<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+    <key>AAPL,ig-platform-id</key>
+    <data>AwDImw==</data>
+    <key>AAPL,slot-name</key>
+    <string>Internal@0,2,0</string>
+    <key>device-id</key>
+    <data>xZsAAA==</data>
+    <key>device_type</key>
+    <string>VGA compatible controller</string>
+    <key>model</key>
+    <string>Intel UHD Graphics 630 (Desktop)</string>
+```
 # What works and What doesn't or WIP:
 - [x] Intel UHD 630 iGPU
 - [x] ALC1200 Internal Speakers
