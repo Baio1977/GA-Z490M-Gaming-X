@@ -106,16 +106,18 @@ These are the device properties in the ```config_iMac20,1_iGPU_with_display outp
 And these are the device properties used in the ```config_iMac20,1_iGPU_computing_only.plist``` to setup the iGPU as computing only:
 ```
 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+<dict>
     <key>AAPL,ig-platform-id</key>
     <data>AwDImw==</data>
     <key>AAPL,slot-name</key>
     <string>Internal@0,2,0</string>
     <key>device-id</key>
-    <data>xZsAAA==</data>
+    <data>yJsAAA==</data>
     <key>device_type</key>
     <string>VGA compatible controller</string>
     <key>model</key>
-    <string>Intel UHD Graphics 630 (Desktop)</string>
+    <string>Intel CoffeeLake-H GT2 [UHD Graphics 630]</string>
+</dict>
 ```
 # What works and What doesn't or WIP:
 - [x] Intel UHD 630 iGPU
