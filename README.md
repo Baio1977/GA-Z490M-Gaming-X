@@ -54,7 +54,7 @@
 ![infodp2](./Screenshot/9.png)
 ![infodp2](./Screenshot/10.png)
 
-These are the device properties in the ```config_iMac20,1_iGPU_with_display output.plist``` to configure the iGPU as display output:
+These are the device properties to configure the iGPU as display output:
 ```
 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 <dict>
@@ -103,7 +103,7 @@ These are the device properties in the ```config_iMac20,1_iGPU_with_display outp
 </dict>
 ```
 
-And these are the device properties used in the ```config_iMac20,1_iGPU_computing_only.plist``` to setup the iGPU as computing only:
+And these are the device properties to setup the iGPU as computing only:
 ```
 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 <dict>
