@@ -28,7 +28,6 @@
 - Fast Boot
 - VT-d (can be enabled if you set DisableIoMapper to YES)
 - CSM
-- Thunderbolt(For initial install, as Thunderbolt can cause issues if not setup correctly)
 - Intel SGX
 - Intel Platform Trust
 - CFG Lock (MSR 0xE2 write protection)
