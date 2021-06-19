@@ -17,7 +17,7 @@
 | Wifi + Bluetooth | Fenvi FV - T919                    |
 | NVMe             | Samsung 980 Pro 512Gb              |
 | SmBios           | IMac 20.1                          |
-| BootLoader       | OpenCore                           |
+| BootLoader       | OpenCore 0.7.1 - Clover 5137       |
 
 ![infodp1](./Screenshot/11.png)
 
