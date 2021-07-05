@@ -17,7 +17,7 @@
 | Wifi + Bluetooth | Fenvi FV - T919                    |
 | NVMe             | Samsung 980 Pro 512Gb              |
 | SmBios           | IMac 20.1                          |
-| BootLoader       | OpenCore                           |
+| BootLoader       | OpenCore 0.7.1 - Clover 5137       |
 
 ![infodp1](./Screenshot/11.png)
 
@@ -28,7 +28,6 @@
 - Fast Boot
 - VT-d (can be enabled if you set DisableIoMapper to YES)
 - CSM
-- Thunderbolt(For initial install, as Thunderbolt can cause issues if not setup correctly)
 - Intel SGX
 - Intel Platform Trust
 - CFG Lock (MSR 0xE2 write protection)
