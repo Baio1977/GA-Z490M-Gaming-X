@@ -286,18 +286,18 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
+				<key>#device-id</key>
+				<data>cJ0AAA==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,31,3</string>
 				<key>device_type</key>
 				<string>Audio device</string>
 				<key>hda-gfx</key>
 				<string>onboard-2</string>
-				<key>model</key>
-				<string>Comet Lake PCH cAVS</string>
-				<key>#device-id</key>
-				<data>cJ0AAA==</data>
 				<key>layout-id</key>
 				<integer>50</integer>
+				<key>model</key>
+				<string>Comet Lake PCH cAVS</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x5)</key>
 			<dict>
@@ -551,42 +551,6 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>FakePCIID.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/FakePCIID</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>FakePCIID_Intel_HDMI_Audio.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
 				<string>USBPorts.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -666,6 +630,8 @@
 		</dict>
 		<key>Scheme</key>
 		<dict>
+			<key>CustomKernel</key>
+			<false/>
 			<key>FuzzyMatch</key>
 			<true/>
 			<key>KernelArch</key>
@@ -697,7 +663,7 @@
 			<key>PickerMode</key>
 			<string>External</string>
 			<key>PickerVariant</key>
-			<string>Acidanthera\Chardonnay</string>
+			<string>HackintoshLife</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
 			<key>ShowPicker</key>
@@ -804,13 +770,15 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 brcmfx-country=#a -lilubetaall</string>
+				<string>-v keepsyms=1 brcmfx-country=#a debug=0x100</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data>aXQ6NA==</data>
 				<key>run-efi-updater</key>
 				<string>No</string>
+				<key>ForceDisplayRotationInEFI</key>
+				<integer>0</integer>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -877,11 +845,11 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02034404GUPHCD1M</string>
+			<string>C020394034NPHCD1F</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>h3mJzH/6</data>
+			<data>BzFCMG9O</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -889,9 +857,26 @@
 			<key>SystemProductName</key>
 			<string>iMac20,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02D8EYPPN5T</string>
+			<string>C02DG0LBPN5T</string>
 			<key>SystemUUID</key>
-			<string>8A419CEC-CD15-4EA0-85B2-16FBC04A87BB</string>
+			<string>D0DEE587-FF2B-49FB-9721-151549F1E73C</string>
+		</dict>
+		<key>PlatformNVRAM</key>
+		<dict>
+			<key>BID</key>
+			<string>Mac-CFF7D910A743CAAF</string>
+			<key>FirmwareFeatures</key>
+			<data>dvWP/QAAAAA=</data>
+			<key>FirmwareFeaturesMask</key>
+			<data>f//f/wAAAAA=</data>
+			<key>MLB</key>
+			<string>C020394034NPHCD1F</string>
+			<key>ROM</key>
+			<data>BzFCMG9O</data>
+			<key>SystemSerialNumber</key>
+			<string>C02DG0LBPN5T</string>
+			<key>SystemUUID</key>
+			<string>D0DEE587-FF2B-49FB-9721-151549F1E73C</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
