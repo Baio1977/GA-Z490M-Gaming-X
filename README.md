@@ -39,21 +39,24 @@
 - Hyper-Threading
 - Execute Disable Bit
 - EHCI/XHCI Hand-off
-- OS type: (Windows 10 Feautres: Ohter)
+- OS type: (Windows 10 Features: Other)
 - DVMT Pre-Allocated(iGPU Memory): 128 MB
 - DVMT Total Gfx Mem → MAX
   
 # Device Screenshot
+
 ![infodp1](./Screenshot/4.png)
 ![infodp2](./Screenshot/5.png)
 
-# Patch IGPU HDMI\DP Output
+# Patch iGPU HDMI\DP Output
+
 ![infodp2](./Screenshot/12.jpg)
 ![infodp2](./Screenshot/8.png)
 ![infodp2](./Screenshot/9.png)
 ![infodp2](./Screenshot/10.png)
 
 These are the device properties to configure the iGPU as display output:
+
 ```
 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 <dict>
@@ -118,17 +121,20 @@ And these are the device properties to setup the iGPU as computing only:
     <string>Intel CoffeeLake-H GT2 [UHD Graphics 630]</string>
 </dict>
 ```
+
 # What works and What doesn't or WIP:
+
 - [x] Intel UHD 630 iGPU
 - [x] ALC1200 Internal Speakers
 - [x] ALC1200 HDMI Audio Output
-- [x] All USB Ports 
+- [x] All USB Ports (Front 30 pin connector at USB2 speed)
 - [x] Wi-Fi and Bluetooth BCM94360CS2 Module
 - [x] Intel (11)I219-V LAN
 - [x] NVRAM
 - [x] Windows boot from OpenCore
 
 # USB Map by Hackintool
+
 - Usb port mapping performed
 
 ![infobigsur](./Screenshot/3.png)
