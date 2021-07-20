@@ -129,7 +129,7 @@ And these are the device properties to setup the iGPU as computing only:
 - [x] Windows boot from OpenCore
 
 # USB Map by Hackintool
-- Usb port mapping performed
+- Usb port mapping performed https://github.com/Baio1977/GA-Z490M-Gaming-X/tree/master/KEXT%20USB%20N18%20Ports
 
 ![infobigsur](./Screenshot/3.png)
 
