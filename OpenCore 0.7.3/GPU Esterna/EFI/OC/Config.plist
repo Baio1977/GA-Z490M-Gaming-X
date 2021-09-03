@@ -29,7 +29,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>R1BSVwI=</data>
 				<key>Limit</key>
@@ -182,24 +182,6 @@
 				<string>SATA controller</string>
 				<key>model</key>
 				<string>AHCI SATA Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,1,0/0,0</string>
-				<key>device_type</key>
-				<string>VGA compatible controller</string>
-				<key>model</key>
-				<string>Radeon RX 590</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,1,0/0,1</string>
-				<key>device_type</key>
-				<string>Audio device</string>
-				<key>model</key>
-				<string>HDMI Audio Radeon RX 590</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
 			<dict>
@@ -516,6 +498,24 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>USBWakeFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/USBWakeFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array/>
@@ -671,7 +671,7 @@
 			<key>AllowSetDefault</key>
 			<true/>
 			<key>AllowToggleSip</key>
-			<false/>
+			<true/>
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
@@ -796,11 +796,11 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C020132074NPHCD8C</string>
+			<string>C02053404J9PHCDA8</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>2VWf12sg</data>
+			<data>usCY4FKw</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -808,9 +808,9 @@
 			<key>SystemProductName</key>
 			<string>iMac20,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02CHPZJPN5T</string>
+			<string>C02DX4Z9PN5T</string>
 			<key>SystemUUID</key>
-			<string>A97A38B9-266B-411F-8F27-983B190E8E9C</string>
+			<string>06F8AD63-D6AE-4977-A67F-F4F674D48F57</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -821,13 +821,13 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>f//f/wAAAAA=</data>
 			<key>MLB</key>
-			<string>C020132074NPHCD8C</string>
+			<string>C02053404J9PHCDA8</string>
 			<key>ROM</key>
-			<data>2VWf12sg</data>
+			<data>usCY4FKw</data>
 			<key>SystemSerialNumber</key>
-			<string>C02CHPZJPN5T</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>A97A38B9-266B-411F-8F27-983B190E8E9C</string>
+			<string>06F8AD63-D6AE-4977-A67F-F4F674D48F57</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
