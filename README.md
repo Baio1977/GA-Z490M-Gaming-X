@@ -21,7 +21,7 @@
 
 ![infodp1](./Screenshot/11.png)
 
-# Bios F20 Settings
+# Bios F21a Settings
 
 ## Disable:
 
@@ -29,7 +29,6 @@
 - VT-d (can be enabled if you set DisableIoMapper to YES)
 - CSM
 - Intel SGX
-- Intel Platform Trust
 - CFG Lock (MSR 0xE2 write protection)
 
 ## Enable:
