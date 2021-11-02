@@ -140,6 +140,7 @@ And these are the device properties to setup the iGPU as computing only:
 # Info Section SSDT GA Z490M Gaming X
 
 ![SSDT](./Screenshot/6.png)
+![SSDT](./Screenshot/13.png)
 
 ## Credits
 
