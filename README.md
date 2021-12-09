@@ -8,7 +8,7 @@
 
 | Component        | Brank                              |
 | ---------------- | ---------------------------------- |
-| Scheda Madre     | GA Z490M Gaming X (BIOS F20d)      | 
+| Scheda Madre     | GA Z490M Gaming X (BIOS F21)       | 
 | CPU              | Intel i5 10600                     | 
 | IGPU             | Intel® UHD Graphics 630            |
 | GPU              | Sapphire RX 590 Nitro+             |
