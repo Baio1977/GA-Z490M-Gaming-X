@@ -16,28 +16,13 @@
                 </dict>
             </array>
             <key>Delete</key>
-            <array>
-                <dict>
-                    <key>All</key>
-                    <false/>
-                    <key>Comment</key>
-                    <string>Drop SSDT-XHC</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>OemTableId</key>
-                    <data>eGhfY21zZDQ=</data>
-                    <key>TableLength</key>
-                    <integer>0</integer>
-                    <key>TableSignature</key>
-                    <data>U1NEVA==</data>
-                </dict>
-            </array>
+            <array/>
             <key>Patch</key>
             <array/>
             <key>Quirks</key>
             <dict>
                 <key>FadtEnableReset</key>
-                <false/>
+                <true/>
                 <key>NormalizeHeaders</key>
                 <false/>
                 <key>RebaseRegions</key>
@@ -79,7 +64,7 @@
                 <key>ForceExitBootServices</key>
                 <false/>
                 <key>ProtectMemoryRegions</key>
-                <false/>
+                <true/>
                 <key>ProtectSecureBoot</key>
                 <false/>
                 <key>ProtectUefiServices</key>
@@ -93,7 +78,7 @@
                 <key>ResizeAppleGpuBars</key>
                 <integer>-1</integer>
                 <key>SetupVirtualMap</key>
-                <false/>
+                <true/>
                 <key>SignalAppleOS</key>
                 <false/>
                 <key>SyncRuntimePermissions</key>
@@ -121,24 +106,6 @@
                     <string>PCI bridge</string>
                     <key>model</key>
                     <string>10th Gen Core Processor PCIe Controller (x16)</string>
-                </dict>
-                <key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
-                <dict>
-                    <key>AAPL,slot-name</key>
-                    <string>Internal@0,1,0/0,0</string>
-                    <key>device_type</key>
-                    <string>VGA compatible controller</string>
-                    <key>model</key>
-                    <string>Radeon RX 590</string>
-                </dict>
-                <key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)</key>
-                <dict>
-                    <key>AAPL,slot-name</key>
-                    <string>Internal@0,1,0/0,1</string>
-                    <key>device_type</key>
-                    <string>Audio device</string>
-                    <key>model</key>
-                    <string>HDMI Audio Radeon RX 590</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x12,0x0)</key>
                 <dict>
@@ -180,8 +147,6 @@
                 <dict>
                     <key>AAPL,slot-name</key>
                     <string>Internal@0,23,0</string>
-                    <key>compatible</key>
-                    <string>pci8086,a306</string>
                     <key>device_type</key>
                     <string>SATA controller</string>
                     <key>model</key>
@@ -270,27 +235,18 @@
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
                 <dict>
-                    <key>#device-id</key>
-                    <data>cJ0AAA==</data>
                     <key>AAPL,slot-name</key>
                     <string>Internal@0,31,3</string>
+                    <key>device-id</key>
+                    <data>cJ0AAA==</data>
                     <key>device_type</key>
                     <string>Audio device</string>
                     <key>hda-gfx</key>
-                    <string>onboard-2</string>
+                    <string>onboard-1</string>
                     <key>layout-id</key>
                     <integer>50</integer>
                     <key>model</key>
                     <string>Comet Lake PCH cAVS</string>
-                </dict>
-                <key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
-                <dict>
-                    <key>AAPL,slot-name</key>
-                    <string>Internal@0,31,4</string>
-                    <key>device_type</key>
-                    <string>SMBus controller</string>
-                    <key>model</key>
-                    <string>Comet Lake PCH SMBus Controller</string>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x5)</key>
                 <dict>
@@ -312,16 +268,48 @@
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
+                    <key>AAPL,GfxYTile</key>
+                    <data>AQAAAA==</data>
                     <key>AAPL,ig-platform-id</key>
-                    <data>AwDImw==</data>
+                    <data>BwCbPg==</data>
                     <key>AAPL,slot-name</key>
                     <string>Internal@0,2,0</string>
                     <key>device-id</key>
-                    <data>yJsAAA==</data>
+                    <data>mz4AAA==</data>
                     <key>device_type</key>
                     <string>VGA compatible controller</string>
+                    <key>enable-hdmi-dividers-fix</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con0-busid</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con0-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con0-type</key>
+                    <data>AAgAAA==</data>
+                    <key>framebuffer-con1-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con1-index</key>
+                    <data>AwAAAA==</data>
+                    <key>framebuffer-con1-type</key>
+                    <data>AAgAAA==</data>
+                    <key>framebuffer-con2-busid</key>
+                    <data>AAAAAA==</data>
+                    <key>framebuffer-con2-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con2-flags</key>
+                    <data>IAAAAA==</data>
+                    <key>framebuffer-con2-index</key>
+                    <data>/////w==</data>
+                    <key>framebuffer-con2-pipe</key>
+                    <data>AAAAAA==</data>
+                    <key>framebuffer-con2-type</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-patch-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>hda-gfx</key>
+                    <string>onboard-1</string>
                     <key>model</key>
-                    <string>Intel Graphics UHD 630</string>
+                    <string>Intel CoffeeLake-H UHD Graphics 630</string>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -461,6 +449,24 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
+                    <string>AirportBrcmFixup.kext/Contents/PlugIns/AirPortBrcmNIC_Injector.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
                     <string>IntelMausi.kext</string>
                     <key>Comment</key>
                     <string>V1.0.8</string>
@@ -468,6 +474,42 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/IntelMausi</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>FakePCIID.kext</string>
+                    <key>Comment</key>
+                    <string>V1.3.16</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/FakePCIID</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>FakePCIID_Intel_HDMI_Audio.kext</string>
+                    <key>Comment</key>
+                    <string>V1.3.16</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/FakePCIID_Intel_HDMI_Audio</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -550,7 +592,7 @@
                 <key>DisableRtcChecksum</key>
                 <false/>
                 <key>ExtendBTFeatureFlags</key>
-                <true/>
+                <false/>
                 <key>ExternalDiskIcons</key>
                 <false/>
                 <key>ForceSecureBootScheme</key>
@@ -622,9 +664,9 @@
             <key>Debug</key>
             <dict>
                 <key>AppleDebug</key>
-                <false/>
+                <true/>
                 <key>ApplePanic</key>
-                <false/>
+                <true/>
                 <key>DisableWatchDog</key>
                 <true/>
                 <key>DisplayDelay</key>
@@ -718,7 +760,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>-v keepsyms=1 debug=0x100</string>
+                    <string>-v keepsyms=1 brcmfx-country=#a debug=0x100</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
@@ -789,13 +831,13 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>C02030600GUPHCDA8</string>
+                <string>C02048301QXPHCDFB</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
                 <integer>0</integer>
                 <key>ROM</key>
-                <data>usCY4FKw</data>
+                <data>97NvC93K</data>
                 <key>SpoofVendor</key>
                 <true/>
                 <key>SystemMemoryStatus</key>
@@ -803,9 +845,9 @@
                 <key>SystemProductName</key>
                 <string>iMac20,1</string>
                 <key>SystemSerialNumber</key>
-                <string>C02D40H9PN5T</string>
+                <string>C02DR0DSPN5T</string>
                 <key>SystemUUID</key>
-                <string>00139AFB-8150-4FC3-BD1D-0AE45E821161</string>
+                <string>9932B825-4EA1-4B0E-8D5F-CF2CDB025831</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -865,9 +907,9 @@
                 <key>AudioDevice</key>
                 <string>PciRoot(0x0)/Pci(0x1F,0x3)</string>
                 <key>AudioOutMask</key>
-                <integer>0</integer>
+                <integer>1</integer>
                 <key>AudioSupport</key>
-                <false/>
+                <true/>
                 <key>DisconnectHda</key>
                 <false/>
                 <key>MaximumGain</key>
@@ -926,6 +968,26 @@
                     <true/>
                     <key>Path</key>
                     <string>OpenRuntime.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>CrScreenshotDxe.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>OpenLinuxBoot.efi</string>
                 </dict>
             </array>
             <key>Input</key>
