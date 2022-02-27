@@ -5,20 +5,20 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLqANlfS.aml, Sun Feb 20 09:22:29 2022
+ * Disassembly of iASLAWtLKd.aml, Sun Feb 27 20:48:10 2022
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x0000056D (1389)
+ *     Length           0x000005E0 (1504)
  *     Revision         0x02
- *     Checksum         0x50
- *     OEM ID           "Hack"
+ *     Checksum         0xFC
+ *     OEM ID           "HACK"
  *     OEM Table ID     "HackLife"
  *     OEM Revision     0x00000000 (0)
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20200925 (538970405)
  */
-DefinitionBlock ("", "SSDT", 2, "Hack", "HackLife", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
 {
     External (_SB_.PCI0, DeviceObj)
     External (_SB_.PCI0.GLAN, DeviceObj)
@@ -32,6 +32,7 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "HackLife", 0x00000000)
     External (HPTE, IntObj)
     External (S0ID, IntObj)
     External (STAS, IntObj)
+    External (UCSI, IntObj)
 
     Scope (\)
     {
@@ -40,6 +41,7 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "HackLife", 0x00000000)
             S0ID = One
             STAS = 0x02
             HPTE = Zero
+            \UCSI = One
         }
 
         Scope (_SB)
@@ -271,38 +273,58 @@ DefinitionBlock ("", "SSDT", 2, "Hack", "HackLife", 0x00000000)
                     {
                         Name (_CID, "smbus")  // _CID: Compatible ID
                         Name (_ADR, Zero)  // _ADR: Address
-                        Device (DVL0)
+                        Device (BLC0)
                         {
-                            Name (_ADR, 0x57)  // _ADR: Address
-                            Name (_CID, "diagsvault")  // _CID: Compatible ID
+                            Name (_ADR, Zero)  // _ADR: Address
+                            Name (_CID, "smbus-blc")  // _CID: Compatible ID
                             Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
                             {
-                                If (!Arg2)
+                                If ((Arg2 == Zero))
                                 {
                                     Return (Buffer (One)
                                     {
-                                         0x57                                             // W
+                                         0x03                                             // .
                                     })
                                 }
 
-                                Return (Package (0x02)
+                                Return (Package (0x0E)
                                 {
+                                    "refnum", 
+                                    Zero, 
                                     "address", 
-                                    0x57
+                                    0x57, 
+                                    "version", 
+                                    0x02, 
+                                    "fault-off", 
+                                    0x03, 
+                                    "fault-len", 
+                                    0x04, 
+                                    "skey", 
+                                    0x4C445342, 
+                                    "smask", 
+                                    0xFF
                                 })
                             }
-                        }
 
-                        Method (_STA, 0, NotSerialized)  // _STA: Status
+                            Name (_GPE, 0x29)  // _GPE: General Purpose Events
+                        }
+                    }
+
+                    Device (BUS1)
+                    {
+                        Name (_CID, "smbus")  // _CID: Compatible ID
+                        Name (_ADR, One)  // _ADR: Address
+                    }
+
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
                         {
-                            If (_OSI ("Darwin"))
-                            {
-                                Return (0x0F)
-                            }
-                            Else
-                            {
-                                Return (Zero)
-                            }
+                            Return (0x0F)
+                        }
+                        Else
+                        {
+                            Return (Zero)
                         }
                     }
                 }
