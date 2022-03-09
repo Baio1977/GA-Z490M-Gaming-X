@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLAWtLKd.aml, Sun Feb 27 20:48:10 2022
+ * Disassembly of iASLUSZ7wY.aml, Tue Mar  8 12:19:40 2022
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000005E0 (1504)
+ *     Length           0x000005D1 (1489)
  *     Revision         0x02
- *     Checksum         0xFC
+ *     Checksum         0xB9
  *     OEM ID           "HACK"
  *     OEM Table ID     "HackLife"
  *     OEM Revision     0x00000000 (0)
@@ -32,7 +32,6 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
     External (HPTE, IntObj)
     External (S0ID, IntObj)
     External (STAS, IntObj)
-    External (UCSI, IntObj)
 
     Scope (\)
     {
@@ -41,7 +40,6 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
             S0ID = One
             STAS = 0x02
             HPTE = Zero
-            \UCSI = One
         }
 
         Scope (_SB)
