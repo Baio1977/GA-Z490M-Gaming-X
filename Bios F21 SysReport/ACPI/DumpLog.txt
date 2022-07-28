@@ -1,0 +1,77 @@
+5:910  4:729  Found UEFI Acpi 2.0 RSDP at 353e7014
+5:910  0:000  Saving ACPI tables from RSDP 353e7014 to ACPI\origin ...
+5:910  0:000   353e7014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+6:275  0:365    (Xsdt: 353e6728, Rsdt: 353e6394)
+6:275  0:000    353e6728: 'XSDT', 'A M I', Rev: 1, Len: 228 -> XSDT.aml
+6:652  0:377    353e6394: 'RSDT', 'A M I', Rev: 1, Len: 132 -> RSDT.aml
+7:019  0:366    Tables in Xsdt: 24
+7:019  0:000    0. 35343000: 'FACP', 'A M I', Rev: 6, Len: 276 -> FACP.aml
+7:396  0:377        (Dsdt: 352FD000, Facs: 35449000, XDsdt: 352fd000, XFacs: 0)
+7:396  0:000        352fd000: 'DSDT', 'A M I', Rev: 2, Len: 285226 -> DSDT.aml
+7:956  0:559        35449000: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+8:393  0:437    1. 35347000: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
+8:787  0:394    2. 35344000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 8251 -> SSDT-0-CpuSsdt.aml (Found hidden SSDT 9 pcs)
+9:237  0:449        * 820633624: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 2069  53 53 44 54 15 08 00 00 02 88 50 6D 52 65 66 00 Internal length = 2069 -> SSDT-x0_0-Cpu0Ist.aml
+9:634  0:396        * 891117976: 'SSDT', 'ApIst', Rev: 2, Len: 1912  53 53 44 54 78 07 00 00 02 6A 50 6D 52 65 66 00 Internal length = 1912 -> SSDT-x0_1-ApIst.aml
+10:068  0:434        * 891105304: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1092  53 53 44 54 44 04 00 00 02 00 50 6D 52 65 66 00 Internal length = 1092 -> SSDT-x0_2-Cpu0Cst.aml
+10:465  0:396        * 891106968: 'SSDT', 'ApCst', Rev: 2, Len: 970  53 53 44 54 CA 03 00 00 02 A6 50 6D 52 65 66 00 Internal length = 970 -> SSDT-x0_3-ApCst.aml
+10:902  0:436        * 891120664: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 716  53 53 44 54 CC 02 00 00 02 0F 50 6D 52 65 66 00 Internal length = 716 -> SSDT-x0_4-Cpu0Hwp.aml
+11:300  0:398        * 891101208: 'SSDT', 'ApHwp', Rev: 2, Len: 983  53 53 44 54 D7 03 00 00 02 28 50 6D 52 65 66 00 Internal length = 983 -> SSDT-x0_5-ApHwp.aml
+11:731  0:430        * 891113496: 'SSDT', 'HwpLvt', Rev: 2, Len: 3050  53 53 44 54 EA 0B 00 00 02 68 50 6D 52 65 66 00 Internal length = 3050 -> SSDT-x0_6-HwpLvt.aml
+12:140  0:409        * 891117592: 'SSDT', 'Cpu0Psd', Rev: 2, Len: 252  53 53 44 54 FC 00 00 00 02 E0 50 6D 52 65 66 00 Internal length = 252 -> SSDT-x0_7-Cpu0Psd.aml
+12:562  0:421        * 891109400: 'SSDT', 'ApPsd', Rev: 2, Len: 3362  53 53 44 54 22 0D 00 00 02 C9 50 6D 52 65 66 00 Internal length = 3362 -> SSDT-x0_8-ApPsd.aml
+12:969  0:407  
+12:969  0:000    3. 352fc000: 'FIDT', 'A M I', Rev: 1, Len: 156 -> FIDT.aml
+13:391  0:421    4. 352f3000: 'SSDT', 'GSWApp', Rev: 1, Len: 35520 -> SSDT-1-GSWApp.aml
+13:883  0:492    5. 352ef000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12793 -> SSDT-2-SaSsdt.aml
+14:350  0:467    6. 352eb000: 'SSDT', 'PegSsdt', Rev: 2, Len: 16070 -> SSDT-3-PegSsdt.aml
+14:800  0:449    7. 35349000: 'HPET', 'A M I', Rev: 1, Len: 56 -> HPET.aml
+15:280  0:480    8. 35348000: 'APIC', 'A M I', Rev: 4, Len: 356 -> APIC.aml
+15:719  0:438    9. 352e8000: 'SSDT', 'A M I', Rev: 2, Len: 11514 -> SSDT-4-A M I.aml
+16:197  0:478    10. 352e6000: 'SSDT', 'A M I', Rev: 2, Len: 5243 -> SSDT-5-A M I.aml
+16:634  0:436    11. 352e2000: 'SSDT', 'xh_cmsd4', Rev: 2, Len: 14689 -> SSDT-6-xh_cmsd4.aml
+17:109  0:475    12. 352e0000: 'NHLT', 'A M I', Rev: 0, Len: 6177 -> NHLT.aml
+17:502  0:392    13. 352df000: 'LPIT', 'A M I', Rev: 1, Len: 148 -> LPIT.aml
+17:938  0:436    14. 352db000: 'SSDT', 'A M I', Rev: 2, Len: 10016 -> SSDT-7-A M I.aml
+18:329  0:391    15. 352d8000: 'SSDT', 'A M I', Rev: 2, Len: 10220 -> SSDT-8-A M I.aml
+18:808  0:478    16. 352d7000: 'DBGP', 'A M I', Rev: 1, Len: 52 -> DBGP.aml
+19:218  0:410    17. 352d6000: 'DBG2', 'A M I', Rev: 0, Len: 84 -> DBG2.aml
+19:641  0:422    18. 352d4000: 'SSDT', 'A M I', Rev: 2, Len: 7059 -> SSDT-9-A M I.aml
+20:052  0:411    19. 352c5000: 'VFCT', 'A M I', Rev: 1, Len: 59524 -> VFCT.aml
+20:476  0:424    20. 352c3000: 'TPM2', 'A M I', Rev: 4, Len: 76 -> TPM2.aml
+20:933  0:456    21. 352c4000: 'BGRT', 'A M I', Rev: 1, Len: 56 -> BGRT.aml
+21:399  0:465    22. 352de000: 'WSMT', 'A M I', Rev: 1, Len: 40 -> WSMT.aml
+21:851  0:452    23. 352c2000: 'FPDT', 'A M I', Rev: 1, Len: 68 -> FPDT.aml
+22:327  0:476  Found UEFI Acpi 1.0 RSDP at 353e7000
+22:327  0:000  Printing ACPI tables from RSDP 353e7000 ...
+22:327  0:000   353e7000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+22:327  0:000    (Rsdt: 353e6000)
+22:327  0:000    353e6000: 'RSDT', 'A M I', Rev: 1, Len: 132
+22:327  0:000    Tables in Rsdt: 24
+22:327  0:000    0. 35343000: 'FACP', 'A M I', Rev: 6, Len: 276
+22:327  0:000        (Dsdt: 352FD000, Facs: 35449000, XDsdt: 352fd000, XFacs: 0)
+22:327  0:000        352fd000: 'DSDT', 'A M I', Rev: 2, Len: 285226
+22:331  0:004        35449000: 'FACS', Ver: 2, Len: 64
+22:331  0:000    1. 35347000: 'MCFG', 'A M I', Rev: 1, Len: 60
+22:331  0:000    2. 35344000: 'SSDT', 'CpuSsdt', Rev: 2, Len: 8251
+22:331  0:000    3. 352fc000: 'FIDT', 'A M I', Rev: 1, Len: 156
+22:331  0:000    4. 352f3000: 'SSDT', 'GSWApp', Rev: 1, Len: 35520
+22:331  0:000    5. 352ef000: 'SSDT', 'SaSsdt', Rev: 2, Len: 12793
+22:331  0:000    6. 352eb000: 'SSDT', 'PegSsdt', Rev: 2, Len: 16070
+22:331  0:000    7. 35349000: 'HPET', 'A M I', Rev: 1, Len: 56
+22:331  0:000    8. 35348000: 'APIC', 'A M I', Rev: 4, Len: 356
+22:331  0:000    9. 352e8000: 'SSDT', 'A M I', Rev: 2, Len: 11514
+22:331  0:000    10. 352e6000: 'SSDT', 'A M I', Rev: 2, Len: 5243
+22:331  0:000    11. 352e2000: 'SSDT', 'xh_cmsd4', Rev: 2, Len: 14689
+22:331  0:000    12. 352e0000: 'NHLT', 'A M I', Rev: 0, Len: 6177
+22:331  0:000    13. 352df000: 'LPIT', 'A M I', Rev: 1, Len: 148
+22:332  0:000    14. 352db000: 'SSDT', 'A M I', Rev: 2, Len: 10016
+22:332  0:000    15. 352d8000: 'SSDT', 'A M I', Rev: 2, Len: 10220
+22:332  0:000    16. 352d7000: 'DBGP', 'A M I', Rev: 1, Len: 52
+22:332  0:000    17. 352d6000: 'DBG2', 'A M I', Rev: 0, Len: 84
+22:332  0:000    18. 352d4000: 'SSDT', 'A M I', Rev: 2, Len: 7059
+22:332  0:000    19. 352c5000: 'VFCT', 'A M I', Rev: 1, Len: 59524
+22:332  0:000    20. 352c3000: 'TPM2', 'A M I', Rev: 4, Len: 76
+22:332  0:000    21. 352c4000: 'BGRT', 'A M I', Rev: 1, Len: 56
+22:332  0:000    22. 352de000: 'WSMT', 'A M I', Rev: 1, Len: 40
+22:332  0:000    23. 352c2000: 'FPDT', 'A M I', Rev: 1, Len: 68
