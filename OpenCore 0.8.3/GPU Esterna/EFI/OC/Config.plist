@@ -952,8 +952,10 @@
                     <string></string>
                     <key>Comment</key>
                     <string></string>
-                    <key>Load</key>
-                    <string>Enabled</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <true/>
                     <key>Path</key>
                     <string>AudioDxe.efi</string>
                 </dict>
@@ -962,8 +964,10 @@
                     <string></string>
                     <key>Comment</key>
                     <string></string>
-                    <key>Load</key>
-                    <string>Enabled</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <true/>
                     <key>Path</key>
                     <string>ext4_x64.efi</string>
                 </dict>
@@ -972,8 +976,10 @@
                     <string></string>
                     <key>Comment</key>
                     <string></string>
-                    <key>Load</key>
-                    <string>Enabled</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <true/>
                     <key>Path</key>
                     <string>HfsPlus.efi</string>
                 </dict>
@@ -982,8 +988,10 @@
                     <string></string>
                     <key>Comment</key>
                     <string></string>
-                    <key>Load</key>
-                    <string>Enabled</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <true/>
                     <key>Path</key>
                     <string>OpenCanopy.efi</string>
                 </dict>
@@ -992,8 +1000,10 @@
                     <string></string>
                     <key>Comment</key>
                     <string></string>
-                    <key>Load</key>
-                    <string>Enabled</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <true/>
                     <key>Path</key>
                     <string>OpenLinuxBoot.efi</string>
                 </dict>
@@ -1002,8 +1012,10 @@
                     <string></string>
                     <key>Comment</key>
                     <string></string>
-                    <key>Load</key>
-                    <string>Enabled</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <true/>
                     <key>Path</key>
                     <string>OpenNtfsDxe.efi</string>
                 </dict>
@@ -1012,8 +1024,10 @@
                     <string></string>
                     <key>Comment</key>
                     <string></string>
-                    <key>Load</key>
-                    <string>Enabled</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <true/>
                     <key>Path</key>
                     <string>OpenRuntime.efi</string>
                 </dict>
@@ -1022,8 +1036,10 @@
                     <string></string>
                     <key>Comment</key>
                     <string></string>
-                    <key>Load</key>
-                    <string>Enabled</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <true/>
                     <key>Path</key>
                     <string>ResetNvramEntry.efi</string>
                 </dict>
@@ -1032,8 +1048,10 @@
                     <string></string>
                     <key>Comment</key>
                     <string></string>
-                    <key>Load</key>
-                    <string>Enabled</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <true/>
                     <key>Path</key>
                     <string>ToggleSipEntry.efi</string>
                 </dict>
