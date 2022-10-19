@@ -94,8 +94,6 @@ These are the device properties to configure the iGPU as display output:
     <data>AQAAAA==</data>
     <key>framebuffer-patch-enable</key>
     <data>AQAAAA==</data>
-    <key>hda-gfx</key>
-    <string>onboard-1</string>
     <key>model</key>
     <string>Intel CoffeeLake-H GT2 [UHD Graphics 630]</string>
 </dict>
