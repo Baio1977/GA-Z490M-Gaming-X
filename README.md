@@ -11,7 +11,7 @@
 | Scheda Madre     | GA Z490M Gaming X (BIOS F21)       | 
 | CPU              | Intel i5 10600                     | 
 | IGPU             | Intel® UHD Graphics 630            |
-| GPU              | Sapphire RX 590 Nitro+             |
+| GPU              | Gigabyte RX 6600XT Gaming OC 8 GB  |
 | Audio            | Realtek ALC1200A                   |
 | Ram              | 32 Gb DDR4 3200 Mhz                |
 | Wifi + Bluetooth | Fenvi FV - T919                    |
