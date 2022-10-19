@@ -95,7 +95,7 @@ These are the device properties to configure the iGPU as display output:
     <key>framebuffer-patch-enable</key>
     <data>AQAAAA==</data>
     <key>model</key>
-    <string>Intel CoffeeLake-H GT2 [UHD Graphics 630]</string>
+    <string>Intel UHD Graphics 630</string>
 </dict>
 ```
 
@@ -112,7 +112,7 @@ And these are the device properties to setup the iGPU as computing only:
     <key>device_type</key>
     <string>VGA compatible controller</string>
     <key>model</key>
-    <string>Intel CoffeeLake-H GT2 [UHD Graphics 630]</string>
+    <string>Intel UHD Graphics 630</string>
 </dict>
 ```
 # Patch GPU SSDT-NAVI
