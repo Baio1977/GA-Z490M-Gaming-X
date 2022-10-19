@@ -117,6 +117,111 @@ And these are the device properties to setup the iGPU as computing only:
     <string>Intel CoffeeLake-H GT2 [UHD Graphics 630]</string>
 </dict>
 ```
+# Patch GPU SSDT-NAVI
+```
+    Scope (\_SB)
+    {
+        Scope (PCI0)
+        {
+            Scope (PEG0)
+            {
+                Scope (PEGP)
+                {
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (Zero)
+                        }
+                        Else
+                        {
+                            Return (0x0F)
+                        }
+                    }
+                }
+
+                Device (EGP0)
+                {
+                    Name (_ADR, Zero)  // _ADR: Address
+                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    {
+                        If (_OSI ("Darwin"))
+                        {
+                            Return (0x0F)
+                        }
+                        Else
+                        {
+                            Return (Zero)
+                        }
+                    }
+
+                    Device (EGP1)
+                    {
+                        Name (_ADR, Zero)  // _ADR: Address
+                        Device (GFX0)
+                        {
+                            Name (_ADR, Zero)  // _ADR: Address
+                            Name (_SUN, One)  // _SUN: Slot User Number
+                            Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+                            {
+                                If ((Arg2 == Zero))
+                                {
+                                    Return (Buffer (One)
+                                    {
+                                         0x03                                             // .
+                                    })
+                                }
+
+                                Return (Package (0x02)
+                                {
+                                    "agdpmod", 
+                                    Buffer (0x07)
+                                    {
+                                        "pikera"
+                                    }
+                                })
+                            }
+                        }
+
+                        Device (HDAU)
+                        {
+                            Name (_ADR, One)  // _ADR: Address
+                            Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+                            {
+                                If ((Arg2 == Zero))
+                                {
+                                    Return (Buffer (One)
+                                    {
+                                         0x03                                             // .
+                                    })
+                                }
+
+                                Return (Package (0x0A)
+                                {
+                                    "AAPL,slot-name", 
+                                    "Built In", 
+                                    "device_type", 
+                                    Buffer (0x13)
+                                    {
+                                        "Controller HDMI/DP"
+                                    }, 
+
+                                    "name", 
+                                    "High Definition Multimedia Interface", 
+                                    "model", 
+                                    Buffer (0x25)
+                                    {
+                                        "High Definition Multimedia Interface"
+                                    }
+                                })
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+```
 # What works and What doesn't or WIP:
 - [x] Intel UHD 630 iGPU
 - [x] ALC1200 Internal Speakers
