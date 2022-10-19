@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASL4x9nJD.aml, Mon Sep  5 20:34:11 2022
+ * Disassembly of iASLIEhvef.aml, Wed Oct 19 21:09:02 2022
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000005CA (1482)
+ *     Length           0x00000757 (1879)
  *     Revision         0x02
- *     Checksum         0xEC
+ *     Checksum         0x43
  *     OEM ID           "HACK"
  *     OEM Table ID     "HackLife"
  *     OEM Revision     0x00000000 (0)
@@ -23,6 +23,8 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
     External (_SB_.PCI0, DeviceObj)
     External (_SB_.PCI0.GLAN, DeviceObj)
     External (_SB_.PCI0.LPCB, DeviceObj)
+    External (_SB_.PCI0.PEG1, DeviceObj)
+    External (_SB_.PCI0.PEG1.PEGP, DeviceObj)
     External (_SB_.PCI0.RP09, DeviceObj)
     External (_SB_.PCI0.RP09.PXSX, DeviceObj)
     External (_SB_.PCI0.SBUS, DeviceObj)
@@ -227,6 +229,103 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
                         Else
                         {
                             Return (Zero)
+                        }
+                    }
+                }
+
+                Scope (PEG1)
+                {
+                    Scope (PEGP)
+                    {
+                        Method (_STA, 0, NotSerialized)  // _STA: Status
+                        {
+                            If (_OSI ("Darwin"))
+                            {
+                                Return (Zero)
+                            }
+                            Else
+                            {
+                                Return (0x0F)
+                            }
+                        }
+                    }
+
+                    Device (EGP0)
+                    {
+                        Name (_ADR, Zero)  // _ADR: Address
+                        Method (_STA, 0, NotSerialized)  // _STA: Status
+                        {
+                            If (_OSI ("Darwin"))
+                            {
+                                Return (0x0F)
+                            }
+                            Else
+                            {
+                                Return (Zero)
+                            }
+                        }
+
+                        Device (EGP1)
+                        {
+                            Name (_ADR, Zero)  // _ADR: Address
+                            Device (GFX0)
+                            {
+                                Name (_ADR, Zero)  // _ADR: Address
+                                Name (_SUN, One)  // _SUN: Slot User Number
+                                Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+                                {
+                                    If ((Arg2 == Zero))
+                                    {
+                                        Return (Buffer (One)
+                                        {
+                                             0x03                                             // .
+                                        })
+                                    }
+
+                                    Return (Package (0x02)
+                                    {
+                                        "agdpmod", 
+                                        Buffer (0x07)
+                                        {
+                                            "pikera"
+                                        }
+                                    })
+                                }
+                            }
+
+                            Device (HDAU)
+                            {
+                                Name (_ADR, One)  // _ADR: Address
+                                Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+                                {
+                                    If ((Arg2 == Zero))
+                                    {
+                                        Return (Buffer (One)
+                                        {
+                                             0x03                                             // .
+                                        })
+                                    }
+
+                                    Return (Package (0x0A)
+                                    {
+                                        "AAPL,slot-name", 
+                                        "Built In", 
+                                        "device_type", 
+                                        Buffer (0x13)
+                                        {
+                                            "Controller HDMI/DP"
+                                        }, 
+
+                                        "name", 
+                                        "High Definition Multimedia Interface", 
+                                        "model", 
+                                        Buffer (0x25)
+                                        {
+                                            "High Definition Multimedia Interface"
+                                        }
+                                    })
+                                }
+                            }
                         }
                     }
                 }
@@ -436,7 +535,7 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
                 }
             }
 
-            If (_OSI ("Darwin"))
+            If ((CondRefOf (\_OSI, Local0) && _OSI ("Darwin")))
             {
                 Device (USBW)
                 {
