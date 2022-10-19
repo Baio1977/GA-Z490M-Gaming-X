@@ -117,108 +117,69 @@ And these are the device properties to setup the iGPU as computing only:
 ```
 # Patch GPU SSDT-NAVI
 ```
-    Scope (\_SB)
+    Scope (\_SB.PCI0.PEG1)
     {
-        Scope (PCI0)
+        Scope (PEGP)
         {
-            Scope (PEG1)
+            Method (_STA, 0, NotSerialized)  // _STA: Status
             {
-                Scope (PEGP)
+                If (_OSI ("Darwin"))
                 {
-                    Method (_STA, 0, NotSerialized)  // _STA: Status
-                    {
-                        If (_OSI ("Darwin"))
-                        {
-                            Return (Zero)
-                        }
-                        Else
-                        {
-                            Return (0x0F)
-                        }
-                    }
+                    Return (Zero)
                 }
+                Else
+                {
+                    Return (0x0F)
+                }
+            }
+        }
 
-                Device (EGP0)
+        Device (EGP0)
+        {
+            Name (_ADR, Zero)  // _ADR: Address
+            Method (_STA, 0, NotSerialized)  // _STA: Status
+            {
+                If (_OSI ("Darwin"))
+                {
+                    Return (0x0F)
+                }
+                Else
+                {
+                    Return (Zero)
+                }
+            }
+
+            Device (EGP1)
+            {
+                Name (_ADR, Zero)  // _ADR: Address
+                Device (GFX0)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
-                    Method (_STA, 0, NotSerialized)  // _STA: Status
+                    Name (_SUN, One)  // _SUN: Slot User Number
+                    Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
                     {
-                        If (_OSI ("Darwin"))
+                        If ((Arg2 == Zero))
                         {
-                            Return (0x0F)
-                        }
-                        Else
-                        {
-                            Return (Zero)
-                        }
-                    }
-
-                    Device (EGP1)
-                    {
-                        Name (_ADR, Zero)  // _ADR: Address
-                        Device (GFX0)
-                        {
-                            Name (_ADR, Zero)  // _ADR: Address
-                            Name (_SUN, One)  // _SUN: Slot User Number
-                            Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+                            Return (Buffer (One)
                             {
-                                If ((Arg2 == Zero))
-                                {
-                                    Return (Buffer (One)
-                                    {
-                                         0x03                                             // .
-                                    })
-                                }
-
-                                Return (Package (0x02)
-                                {
-                                    "agdpmod", 
-                                    Buffer (0x07)
-                                    {
-                                        "pikera"
-                                    }
-                                })
-                            }
+                                 0x03                                             // .
+                            })
                         }
 
-                        Device (HDAU)
+                        Return (Package (0x02)
                         {
-                            Name (_ADR, One)  // _ADR: Address
-                            Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
+                            "agdpmod", 
+                            Buffer (0x07)
                             {
-                                If ((Arg2 == Zero))
-                                {
-                                    Return (Buffer (One)
-                                    {
-                                         0x03                                             // .
-                                    })
-                                }
-
-                                Return (Package (0x0A)
-                                {
-                                    "AAPL,slot-name", 
-                                    "Built In", 
-                                    "device_type", 
-                                    Buffer (0x13)
-                                    {
-                                        "Controller HDMI/DP"
-                                    }, 
-
-                                    "name", 
-                                    "High Definition Multimedia Interface", 
-                                    "model", 
-                                    Buffer (0x25)
-                                    {
-                                        "High Definition Multimedia Interface"
-                                    }
-                                })
+                                "pikera"
                             }
-                        }
+                        })
                     }
                 }
             }
         }
     }
+}
 ```
 # What works and What doesn't or WIP:
 - [x] Intel UHD 630 iGPU
