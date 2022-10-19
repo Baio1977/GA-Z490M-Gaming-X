@@ -123,7 +123,7 @@ And these are the device properties to setup the iGPU as computing only:
     {
         Scope (PCI0)
         {
-            Scope (PEG0)
+            Scope (PEG1)
             {
                 Scope (PEGP)
                 {
