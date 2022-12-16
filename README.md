@@ -155,26 +155,6 @@ And these are the device properties to setup the iGPU as computing only:
                 Device (GFX0)
                 {
                     Name (_ADR, Zero)  // _ADR: Address
-                    Name (_SUN, One)  // _SUN: Slot User Number
-                    Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
-                    {
-                        If ((Arg2 == Zero))
-                        {
-                            Return (Buffer (One)
-                            {
-                                 0x03                                             // .
-                            })
-                        }
-
-                        Return (Package (0x02)
-                        {
-                            "agdpmod", 
-                            Buffer (0x07)
-                            {
-                                "pikera"
-                            }
-                        })
-                    }
                 }
             }
         }
