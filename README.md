@@ -21,7 +21,7 @@
 
 ![infodp1](./Screenshot/11.png)
 
-# Bios F21 Settings
+# Bios F22 Settings
 
 ## Disable:
 
