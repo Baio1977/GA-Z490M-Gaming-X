@@ -8,7 +8,7 @@
 
 | Component        | Brank                              |
 | ---------------- | ---------------------------------- |
-| Scheda Madre     | GA Z490M Gaming X (BIOS F21)       | 
+| Scheda Madre     | GA Z490M Gaming X (BIOS F22)       | 
 | CPU              | Intel i5 10600                     | 
 | IGPU             | Intel® UHD Graphics 630            |
 | GPU              | Gigabyte RX 6600XT Gaming OC 8 GB  |
