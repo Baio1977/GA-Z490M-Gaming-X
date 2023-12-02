@@ -14,10 +14,10 @@
 | GPU              | Gigabyte RX 6600XT Gaming OC 8 GB  |
 | Audio            | Realtek ALC1200A                   |
 | Ram              | 32 Gb DDR4 3200 Mhz                |
-| Wifi + Bluetooth | Fenvi FV - T919                    |
+| Wifi + Bluetooth | Intel AX 210S                      |
 | NVMe             | Samsung 980 Pro 512Gb              |
 | SmBios           | IMac 20.1                          |
-| BootLoader       | OpenCore - Clover                  |
+| BootLoader       | OpenCore                           |
 
 ![infodp1](./Screenshot/11.png)
 
