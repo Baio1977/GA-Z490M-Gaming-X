@@ -58,7 +58,7 @@ These are the device properties to configure the iGPU as display output:
     <key>AAPL,ig-platform-id</key>
     <data>BwCbPg==</data>
     <key>AAPL,slot-name</key>
-    <string>Internal@0,2,0</string>
+    <string>Internal</string>
     <key>device-id</key>
     <data>mz4AAA==</data>
     <key>device_type</key>
