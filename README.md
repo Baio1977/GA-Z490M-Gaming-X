@@ -23,7 +23,6 @@
 ## Disable:
 
 - Fast Boot
-- VT-d (can be enabled if you set DisableIoMapper to YES)
 - CSM
 - Intel SGX
 - CFG Lock (MSR 0xE2 write protection)
@@ -31,6 +30,7 @@
 ## Enable:
 
 - VT-x
+- VT-d (set DisableIoMapper to False)
 - Above 4G decoding
 - Hyper-Threading
 - Execute Disable Bit
